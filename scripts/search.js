@@ -47,6 +47,9 @@ function displayAll(temp){
         Show Network: ${database[0].show.network.name}</b>
         </p>`;
         document.getElementById('column3').insertAdjacentHTML('beforeend', markup);
+        markup = `<img src=${database[0].show.image.medium} 
+                   alt=${database[0].show.name}>`;
+        document.getElementById('column3').insertAdjacentHTML('beforeend', markup);
         
     }
 
