@@ -1,0 +1,108 @@
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+body {
+    background-color: lightblue;
+  }
+h1 {
+    style: color blue
+}
+* {
+    box-sizing: border-box;
+  }
+  #header1{
+    text-align: center;
+    height: 50px;
+  }
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+
+  }
+  .titleYear {
+    width: 25%;
+  }
+
+  .titleCol {
+    width: 75%;
+  }
+  .parent {
+    border: 1rem solid green;
+    margin: 1rem;
+    padding: 1rem 1rem;
+    text-align: center;
+ }
+ .division {
+    display: inline-block;
+    border: 1px solid rgb(0, 13, 9);
+    padding: 1rem 1rem;
+  
+  tr:nth-child(even) {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    background-color: #dddddd;
+  
+  /* Create three unequal columns that floats next to each other */
+  #column1 {
+    width: 25%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    border: 2px solid black;
+  }
+  #column2{
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    border: 2px solid black;
+  }
+  
+  #column3 {
+    width: 25%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    border: 2px solid black;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .details {
+    font-style:italic;
+    line-height:32px;
+    font-size:200px;
+    color:#fff;
+    background: #3F51B5;
+    margin:10px;
+    padding: 15px 20px 15px 20px;
+    border-radius: 5px;
+    }
+    .details:before,
+    .details:after {
+    position: relative;
+    vertical-align: middle;
+    font-family: 'Playfair Display', serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 0;
+    color: #FBC02D;
+    }
+.details:before {
+    left: -5px;
+    content: '\201C';
+    }
+    .details:after {
+    content: '\201D';
+    }
+    .titleCol:hover {
+        background-color: yellow;
+      }
