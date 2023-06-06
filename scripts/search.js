@@ -11,10 +11,12 @@ var database;
 function displayAll(temp){
     console.log(temp)
     database = temp
+    let i=0;
     database.forEach(tvShow =>{
-        const markup = `<tr><td class="titleCol" >${tvShow.show.name}</td>
+        const markup = `<tr><td  ${tvShow.show.name}</td>
         <td class="yearCol"> (${tvShow.show.premiered.substring(0,4)} - 
         ${tvShow.show.ended.substring(0,4)})</td> </tr>`;
+        //document.getElementById(`link${i}`).addEventListener("onclick", showDetails(temp,i));
         document.querySelector('table').insertAdjacentHTML('beforeend', markup);
         })
         showDetails(temp)
